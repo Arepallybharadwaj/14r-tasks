@@ -5,49 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        table{
+            border: 3px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+     table {
+        box-shadow: 5px 8px 6px orange;
+     }
         img{
-            border: 2px solid black;
+            width: 100px;
+            height: 100px;
         }
-        [alt~=happy]{
-            padding: 20px;
-            background-color: lightcyan;
+        .bhannu1{
+            height: 70px;
+            width: 100px;
+            border: 2px solid brown;
+
+            padding: 10px;
+            background-color: lightgrey;
         }
-        [alt^=_]{
-            padding: 20px;
-            background-color: lightgreen;
+        @media screen and (min-width: 320px) and (max-width: 426px){
+            .mama4,.mama3{
+                display: none;
+            }
+
         }
-        [alt*=ho]{
-            padding: 20px;
-            background-color: lightpink;
-        }
-        [alt$=ice]{
-            padding: 20px;
-            background-color: lightskyblue;
-        }
-        [id]{
-            padding: 20px;
-            background-color: lightcoral;
-        }
-        [class]{
-            padding: 20px;
-            background-color: lightseagreen;
+        @media screen and (min-width: 426px) and (max-width: 768px){
+            .mama4{
+                display: none;
+            }
+            @media screen and (min-width: 768px) {
+                }
+            }
+        div{
+            height: 50px;
+            width: 170px;
+            border: 2px solid grey;
+            margin-left: 130px;
+            display: flex;
+           justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            text-shadow: -2px -3px red;
+            background-image: linear-gradient(45deg,red,yellow,blue);
         }
     </style>
 </head>
 <body>
-    <table>
+<div>
+   <h1>TABLES</h1>
+</div>
+<table>
     <tr>
-        <td><img src="images1.jpeg" alt="tower happy"height="120px"></td>
-        <td><img src="images2.jpeg" alt="_car four" height="120px"></td>
-        <td><img src="images3.jpeg" alt="shoes are very" height="120px" width="175px"></td>
-    </tr>
-    <tr>
-        <td><img src="images2.jpeg" alt="thor is very nice" height="120px"></td>
-        <td><img src="images6.jpeg" id="" height="120px"></td>
-        <td><img src="images1.jpeg" class=""  height="120px"></td>
-    </tr>
-    </table>
+        <td class="bhannu1" id="b"><img src="./images/pexels-ella-olsson-572949-1640774.jpg" alt="images1"></td>
+        <td class="bhannu1"><img src="./images/pexels-introspectivedsgn-7768661.jpg" alt="images1"></td>
+        <td class="bhannu1 mama3"><img src="./images/pexels-eury-escudero-124357529-9962890.jpg" alt="images1"></td>
+        <td class="bhannu1 mama4"><img src="./images/pexels-ella-olsson-572949-1640777.jpg" alt=""></td>
 
-    
+    </tr>
+
+    <tr>
+        <td class="bhannu1"><img src="./images/pexels-introspectivedsgn-7768661.jpg" alt=""></td>
+        <td class="bhannu1"><img src="./images/pexels-vishnurnair-1105666.jpg%20mus" alt=""></td>
+        <td class="bhannu1 mama3"><img src="./images/pexels-andre-furtado-43594-1264210.jpg" alt="images1"></td>
+        <td class="bhannu1 mama4"><img src="./images/pexels-introspectivedsgn-7768661.jpg" alt=""></td>
+    </tr>
+
+    <tr>
+        <td class="bhannu1"><img src="./images/pexels-ella-olsson-572949-1640777.jpg" alt=""></td>
+        <td class="bhannu1"><img src="./images/pexels-eury-escudero-124357529-9962890.jpg" alt=""></td>
+        <td class="bhannu1 mama3"><img src="./images/pexels-vishnurnair-1105666.jpg%20mus" alt=""></td>
+        <td class="bhannu1 mama4"><img src="./images/pexels-andre-furtado-43594-1264210.jpg" alt=""></td>
+    </tr>
+</table>
 </body>
 </html>
